@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+         <title>Deutsch - Learn</title>
+         <meta name="apple-mobile-web-app-title" content="titel">
+         <link rel="icon" type="image/png" href="icons/favicon.png">
+         <link rel="shortcut icon" type="image/svg+xml" href="icons/favicon.svg">
+         <link rel="apple-touch-icon" href="icons/favicon.svg" sizes="any">
+         <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" sizes="any">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+         <link rel="stylesheet" type="text/css" href="style.css"/>
+         <script language="javascript" type="text/javascript" src="script.js"></script>
+         <meta charset="UTF-8">
+         <meta name="theme-color" content="#000000">
+         <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+         <meta name="mobile-web-app-capable" content="yes">
+         <meta name="apple-mobile-web-app-capable" content="yes">
+         <link rel="manifest" href="manifest.json">
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Code+Pro&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body style="background:#fdedec;">
+
+          <!-- Loadingscreen -->
+          <div id="loading-screen">
+              <div id="loading"><img src="logo.svg"></div>
+          </div>
+
+          <!-- Navigation -->
+          <header>
+          <div id="navbar-pc" style="background:#ec7063;">
+            <div id="navbar-pc-titel"><a href="#"><img src="logo-white.svg"></a></div>
+            <div id="navbar-pc-links">
+              <a href="#" class="nav-pc-link">Deutsch</a>
+              <a href="#" class="nav-pc-link">Mathe</a>
+              <a href="#" class="nav-pc-link">NT</a>
+              <a href="#" class="nav-pc-link">RZG</a>
+              <a class="nav-sp-link"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+          </header>
+
+          <div id="navigation-smartphone" #ec7063>
+            <div class="navbar-sp-link"><a href="#">Deutsch <i class="fas fa-pencil-alt"></i></a></div>
+            <div class="navbar-sp-link"><a href="#">Mathe <i class="fas fa-calculator"></i></a></div>
+            <div class="navbar-sp-link"><a href="#">NT <i class="fas fa-leaf"></i></a></div>
+            <div class="navbar-sp-link"><a href="#">RZG <i class="fas fa-book"></i></a></div>
+            <div class="navbar-sp-link"><a><i class="fas fa-times"></i></a></div>
+          </div>
+
+          <!-- Content -->
+          <div id="content"><br><br><br><br>
+            <div>
+              <h1>4 F&auml;lle</h1>
+              <h3>Aufgabe 1: F&uuml;lle die Tabelle aus</h3>
+              <table>
+                <tr>
+                  <th>Fall</th>
+                  <th>Fragewort</th>
+                  <th>Pronomen</th>
+                </tr>
+                <tr>
+                  <td>Nominativ</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>wen?</td>
+                  <td>den</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>dem</td>
+                </tr>
+                <tr>
+                  <td>Genitiv</td>
+                  <td></td>
+                  <td>des</td>
+                </tr>
+              </table>
+              <h3>Aufgabe 2: Bestimme den Fall</h3>
+              <p>Der Hund spielt Fussball.</p>
+              <select required>
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+            </select>
+
+              <p>Ich habe den Kuchen gebacken.</p>
+              <select required>
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+            </div>
+          </div>
+
+
+
+      <script>
+      // Loading
+      $(window).on("load", function(){
+        $("#loading-screen").fadeOut(750);
+      });
+
+      // Navigation
+      $(".nav-sp-link").click(function(){
+          $("#navigation-smartphone").toggle( 'slow', function(){
+          });
+      });
+
+      $(".navbar-sp-link").click(function(){
+          $("#navigation-smartphone").toggle( 'slow', function(){
+          });
+      });
+      </script>
+</body>
+</html>
