@@ -43,7 +43,7 @@
           </div>
           </header>
 
-          <div id="navigation-smartphone" #ec7063>
+          <div id="navigation-smartphone" style="background:#ec7063;">
             <div class="navbar-sp-link"><a href="https://michivonah.github.io/learn/subjects/german/index.html">Deutsch <i class="fas fa-pencil-alt"></i></a></div>
             <div class="navbar-sp-link"><a href="#">Mathe <i class="fas fa-calculator"></i></a></div>
             <div class="navbar-sp-link"><a href="#">NT <i class="fas fa-leaf"></i></a></div>
@@ -65,28 +65,28 @@
                 </tr>
                 <tr>
                   <td>Nominativ</td>
-                  <td></td>
-                  <td></td>
+                  <td><input type="text" id="aufg1-field1" placeholder=""></td>
+                  <td><input type="text" id="aufg1-field2" placeholder=""></td>
                 </tr>
                 <tr>
-                  <td></td>
+                  <td><input type="text" id="aufg1-field3" placeholder=""></td>
                   <td>wen?</td>
                   <td>den</td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
+                  <td><input type="text" id="aufg1-field4" placeholder=""></td>
+                  <td><input type="text" id="aufg1-field5" placeholder=""></td>
                   <td>dem</td>
                 </tr>
                 <tr>
                   <td>Genitiv</td>
-                  <td></td>
+                  <td><input type="text" id="aufg1-field6" placeholder=""></td>
                   <td>des</td>
                 </tr>
               </table>
               <h3>Aufgabe 2: Bestimme den Fall</h3>
               <p>Der <strong>Hund</strong> spielt Fussball.</p>
-              <select required>
+              <select required id="aufg2-field1">
               <option disabled selected hidden>Fall</option>
               <option>Nominativ</option>
               <option>Akkusativ</option>
@@ -95,7 +95,7 @@
               </select>
 
               <p>Ich habe den <strong>Kuchen</strong> gebacken.</p>
-              <select required>
+              <select required id="aufg2-field2">
               <option disabled selected hidden>Fall</option>
               <option>Nominativ</option>
               <option>Akkusativ</option>
@@ -104,7 +104,7 @@
               </select>
 
               <p>Ich schenke dem <strong>Jungen</strong> ein Buch.</p>
-              <select required>
+              <select required id="aufg2-field3">
               <option disabled selected hidden>Fall</option>
               <option>Nominativ</option>
               <option>Akkusativ</option>
@@ -113,7 +113,7 @@
               </select>
 
               <p>Mein <strong>Freund</strong> heisst Julian.</p>
-              <select required>
+              <select required id="aufg2-field4">
               <option disabled selected hidden>Fall</option>
               <option>Nominativ</option>
               <option>Akkusativ</option>
@@ -122,7 +122,7 @@
               </select>
 
               <p>Das Haus meiner <strong>Katze</strong> ist rot.</p>
-              <select required>
+              <select required id="aufg2-field5">
               <option disabled selected hidden>Fall</option>
               <option>Nominativ</option>
               <option>Akkusativ</option>
@@ -131,7 +131,7 @@
               </select>
 
               <p>Peter nimmt heute den <strong>Regenschirm</strong> zur Arbeit da es gestern regnete.</p>
-              <select required>
+              <select required id="aufg2-field6">
               <option disabled selected hidden>Fall</option>
               <option>Nominativ</option>
               <option>Akkusativ</option>
@@ -139,7 +139,7 @@
               <option>Genitiv</option>
               </select>
 
-              <br><button>Kontrollieren</button>
+              <br><button id="control-btn">Kontrollieren</button>
             </div>
           </div>
 
@@ -160,6 +160,52 @@
       $(".navbar-sp-link").click(function(){
           $("#navigation-smartphone").toggle( 'slow', function(){
           });
+      });
+
+      //Aufgaben
+      $("#control-btn").click(function(){
+          if($("#aufg1-field1").val() == 'wer?'){
+            $('#aufg1-field1').css('background', '#7dcea0');
+          }
+          if($("#aufg1-field2").val() == 'der'){
+            $('#aufg1-field2').css('background', '#7dcea0');
+          }
+          if($("#aufg1-field3").val() == 'Akkusativ'){
+            $('#aufg1-field3').css('background', '#7dcea0');
+          }
+          if($("#aufg1-field4").val() == 'Dativ'){
+            $('#aufg1-field4').css('background', '#7dcea0');
+          }
+          if($("#aufg1-field5").val() == 'wem?'){
+            $('#aufg1-field5').css('background', '#7dcea0');
+          }
+          if($("#aufg1-field6").val() == 'wessen?'){
+            $('#aufg1-field6').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field1").val() == 'Nominativ'){
+            $('#aufg2-field1').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field2").val() == 'Akkusativ'){
+            $('#aufg2-field2').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field3").val() == 'Dativ'){
+            $('#aufg2-field3').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field4").val() == 'Nominativ'){
+            $('#aufg2-field4').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field5").val() == 'Genitiv'){
+            $('#aufg2-field5').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field6").val() == 'Akkusativ'){
+            $('#aufg2-field6').css('background', '#7dcea0');
+          }
       });
       </script>
 </body>
