@@ -36,6 +36,7 @@ body{
    hellblau: #d4e6f1
    hellgrün: #e9f7ef
    hellgelb: #fef9e7
+
    */
 
    #content{
@@ -175,14 +176,25 @@ body{
      margin: 5px;
      }
 
+     input{
+     width: 100%;
+     height: auto;
+     border: 2px solid;
+     border-color: #f0b27a;
+     border-radius: 8px;
+     margin: 5px;
+     }
+
      button{
      width: 80%;
      height: auto;
-     color: #f0b27a;
+     color: #000;
+     border-color: #f0b27a;
      border: 2px solid;
      border-radius: 8px;
      margin: 5px;
      background: transparent;
+     font-size: 20px;
      }
 
      p{
