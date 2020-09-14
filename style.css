@@ -43,6 +43,8 @@ body{
    max-width: 1100px;
    margin: auto;
    align-items: center;
+   justify-content: center;
+   text-align: left;
    }
 
 
@@ -109,6 +111,10 @@ body{
      margin-top: 60px;
      }
 
+     #navigation-smartphone a{
+    color: #fff;
+          }
+
 
 .navbar-sp-link{
      font-size: 25px;
@@ -117,7 +123,10 @@ body{
      font-family: jost, sans-serif;
      }
 
-
+     .logo{
+     width: 90%;
+     height: auto;
+     }
 
      a{
      color: #000;
@@ -132,9 +141,10 @@ body{
      border: 2px solid;
      }
 
-     option{
+     select{
      width: 80%;
      height: auto;
+     border: 2px solid;
      border-color: #f0b27a;
      border-radius: 8px;
      margin: 5px;
@@ -144,6 +154,7 @@ body{
      width: 80%;
      height: auto;
      color: #f0b27a;
+     border: 2px solid;
      border-radius: 8px;
      margin: 5px;
      background: transparent;
