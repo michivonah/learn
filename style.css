@@ -129,6 +129,32 @@ body{
      height: auto;
      }
 
+     #music{
+     background: #f0b27a;
+     width: 100%;
+     display: none;
+     }
+
+     #music-open{
+     background: #f0b27a;
+     width: 30%;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     right: 20px;
+     bottom: 400px;
+     position: fixed;
+     }
+
+     #musicplayer{
+     width: 30%;
+     height: 400px;
+     right: 20px;
+     bottom: 0;
+     position: fixed;
+     background: #f0b27a;
+     display: none;
+     }
+
      a{
      color: #000;
      text-decoration: none;
