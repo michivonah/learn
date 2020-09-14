@@ -26,7 +26,7 @@
 
           <!-- Loadingscreen -->
           <div id="loading-screen">
-              <div id="loading"><img src="https://michivonah.github.io/learn/logo-black.svg"></div>
+              <div id="loading"><img src="https://michivonah.github.io/learn/logo-black.svg" class="logo"></div>
           </div>
 
           <!-- Navigation -->
@@ -130,8 +130,44 @@
               <option>Genitiv</option>
               </select>
 
-              <p>Peter nimmt heute den <strong>Regenschirm</strong> zur Arbeit da es gestern regnete.</p>
+              <p>Peter nimmt heute den <strong>Regenschirm</strong> mit zur Arbeit da es gestern regnete.</p>
               <select required id="aufg2-field6">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
+              <p>Der Garten unserer <strong>Nachbarin</strong> ist sch&ouml;n.</p>
+              <select required id="aufg2-field7">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
+              <p>Lea f&uuml;ttert die <strong>Katze.</strong></p>
+              <select required id="aufg2-field8">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
+              <p>Das <strong>Flugzeug</strong> ist weiss.</p>
+              <select required id="aufg2-field9">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
+              <p>Meine Schwester bekamm einen neuen <strong>Fussball.</strong></p>
+              <select required id="aufg2-field10">
               <option disabled selected hidden>Fall</option>
               <option>Nominativ</option>
               <option>Akkusativ</option>
@@ -205,6 +241,22 @@
 
           if($("#aufg2-field6").val() == 'Akkusativ'){
             $('#aufg2-field6').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field7").val() == 'Genitiv'){
+            $('#aufg2-field7').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field8").val() == 'Akkusativ'){
+            $('#aufg2-field8').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field9").val() == 'Nominativ'){
+            $('#aufg2-field9').css('background', '#7dcea0');
+          }
+
+          if($("#aufg2-field10").val() == 'Akkusativ'){
+            $('#aufg2-field10').css('background', '#7dcea0');
           }
       });
       </script>
