@@ -178,11 +178,9 @@ body{
 
      input{
      width: 100%;
-     height: auto;
-     border: 2px solid;
-     border-color: #f0b27a;
-     border-radius: 8px;
-     margin: 5px;
+     height: 100%;
+     background: transparent;
+     margin: 0px;
      }
 
      button{
