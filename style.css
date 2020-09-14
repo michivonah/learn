@@ -60,6 +60,10 @@ body{
      webkit-user-select: none;
      }
 
+     #navbar-pc a{
+          color: #fff;
+          }
+
 
 #navbar-pc-titel{
      margin-top: 0px;
@@ -115,12 +119,11 @@ body{
 
 
      a{
-     color: #fff;
+     color: #000;
      text-decoration: none;
      }
 
      a:hover{
-     color: #fff;
      text-decoration: underline;
      }
 
@@ -140,8 +143,8 @@ body{
           }
 
    @keyframes loadingcolor{
-   0%{ background: #fdedec; }
-   25%{ background: #d4e6f1; }
-   50%{ background: #e9f7ef; }
-   75%{ background: #fef9e7; }
+   0%{ background: #ec7063; }
+   25%{ background: #5499c7; }
+   50%{ background: #7dcea0; }
+   75%{ background: #f1c40f; }
    }
