@@ -161,8 +161,9 @@ body{
           }
 
    @keyframes loadingcolor{
-   0%{ background: #ec7063; }
-   25%{ background: #5499c7; }
-   50%{ background: #7dcea0; }
-   75%{ background: #f1c40f; }
+   0%{ background: #f0b27a; }
+   20%{ background: #ec7063; }
+   40%{ background: #5499c7; }
+   60%{ background: #7dcea0; }
+   80%{ background: #f1c40f; }
    }
