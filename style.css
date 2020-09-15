@@ -205,12 +205,12 @@ body{
      margin: 0px;
      font-family: "open sans", sans-serif;
      font-size: 16px;
+     border: none;
      }
 
      button{
      width: 80%;
      height: auto;
-     color: #000;
      border-color: #f0b27a;
      border: 2px solid;
      border-radius: 8px;
