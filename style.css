@@ -16,7 +16,7 @@ body{
    align-items: center;
    justify-content: center;
    display: flex;
-   animation: loadingcolor 4s infinite;
+   animation: loadingcolor 2s infinite;
    }
 
    #loading{
@@ -160,13 +160,14 @@ body{
      margin: auto;
      margin-left: 5%;
      margin-top: 5%;
-     position: absolute;
+     position: fixed;
      background: #f0b27a;
      color: #000;
      border-radius: 8px;
      text-transform: uppercase;
      display: none;
      text-align: center;
+     animation: score-animation 1s infinite;
      }
 
 
@@ -242,4 +243,12 @@ body{
    40%{ background: #5499c7; }
    60%{ background: #7dcea0; }
    80%{ background: #f1c40f; }
+   }
+
+   @keyframes score-animation{
+   0%{ color: #f0b27a; }
+   20%{ color: #ec7063; }
+   40%{ color: #5499c7; }
+   60%{ color: #7dcea0; }
+   80%{ color: #f1c40f; }
    }
