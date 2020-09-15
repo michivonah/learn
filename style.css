@@ -160,8 +160,6 @@ body{
      margin: auto;
      margin-left: 5%;
      margin-top: 5%;
-     top: 5%;
-     left: 5%;
      position: fixed;
      background: #f0b27a;
      color: #000;
@@ -220,6 +218,7 @@ body{
      background: transparent;
      font-size: 20px;
      font-family: "open sans", sans-serif;
+     text-transform: uppercase;
      }
 
      p{
