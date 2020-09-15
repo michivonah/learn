@@ -157,14 +157,15 @@ body{
      #result-screen{
      width: 90%;
      height: 90vh;
-     margin: auto;
-     margin-top: 50px;
+     margin: 5%;
+     top: 5%;
      position: absolute;
      background: #f0b27a;
      color: #000;
      border-radius: 8px;
      text-transform: uppercase;
      display: none;
+     text-align: center;
      }
 
 
