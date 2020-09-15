@@ -154,6 +154,24 @@ body{
      display: none;
      }
 
+     #result-screen{
+     width: 90%;
+     height: 90vh;
+     margin: auto;
+     margin-top: 50px;
+     position: absolute;
+     background: #f0b27a;
+     color: #000;
+     border-radius: 8px;
+     text-transform: uppercase;
+     display: none;
+     }
+
+
+     #score-text{
+     text-transform: uppercase;
+     }
+
      a{
      color: #000;
      text-decoration: none;
@@ -174,6 +192,8 @@ body{
      border-color: #f0b27a;
      border-radius: 8px;
      margin: 5px;
+     font-size: 16px;
+     font-family: "open sans", sans-serif;
      }
 
      input{
@@ -181,6 +201,8 @@ body{
      height: 100%;
      background: transparent;
      margin: 0px;
+     font-family: "open sans", sans-serif;
+     font-size: 16px;
      }
 
      button{
@@ -193,6 +215,7 @@ body{
      margin: 5px;
      background: transparent;
      font-size: 20px;
+     font-family: "open sans", sans-serif;
      }
 
      p{
