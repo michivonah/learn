@@ -162,7 +162,7 @@ body{
      margin-top: 5%;
      top: 5%;
      left: 5%;
-     position: absolute;
+     position: fixed;
      background: #f0b27a;
      color: #000;
      border-radius: 8px;
