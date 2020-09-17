@@ -165,9 +165,9 @@ body{
      color: #000;
      border-radius: 8px;
      text-transform: uppercase;
-     display: none;
+     display: block;
      text-align: center;
-     animation: score-animation 1s infinite;
+     animation: score-animation2 1s infinite;
      }
 
 
@@ -178,6 +178,7 @@ body{
      a{
      color: #000;
      text-decoration: none;
+     margin-left: 5px;
      }
 
      a:hover{
