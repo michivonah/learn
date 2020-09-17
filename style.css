@@ -159,15 +159,23 @@ body{
      height: 90vh;
      margin: auto;
      margin-left: 5%;
-     margin-top: 5%;
+     margin-bottom: 15px;
      background: #f0b27a;
      color: #000;
      border-radius: 8px;
      text-transform: uppercase;
-     display: block;
+     display: none;
      text-align: center;
+     animation: smiley-animation 2s infinite;
      }
 
+     #result-screen h3{
+     font-size: 40px;
+     }
+
+     #result-screen i{
+     animation: smiley-animation 2s infinite;
+     }
 
      #score-text{
      text-transform: uppercase;
@@ -244,10 +252,17 @@ body{
    80%{ background: #f1c40f; }
    }
 
-   @keyframes score-animation{
+   @keyframes bg-animation{
+   0%{ background: #f0b27a; }
+   20%{ background: #ec7063; }
+   40%{ background: #5499c7; }
+   60%{ background: #7dcea0; }
+   80%{ background: #f1c40f; }
+   }
+
+   @keyframes smiley-animation{
    0%{ color: #f0b27a; }
-   20%{ color: #ec7063; }
-   40%{ color: #5499c7; }
-   60%{ color: #7dcea0; }
-   80%{ color: #f1c40f; }
+   25%{ color: #ec7063; }
+   50%{ color: #5499c7; }
+   75%{ color: #7dcea0; }
    }
