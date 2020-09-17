@@ -154,7 +154,7 @@ body{
      display: none;
      }
 
-     #result-screen{
+     /*#result-screen{
      width: 90%;
      height: 90vh;
      margin: auto;
@@ -168,7 +168,7 @@ body{
      display: block;
      text-align: center;
      animation: score-animation2 1s infinite;
-     }
+     }*/
 
 
      #score-text{
