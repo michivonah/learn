@@ -154,21 +154,19 @@ body{
      display: none;
      }
 
-     /*#result-screen{
+     #result-screen{
      width: 90%;
      height: 90vh;
      margin: auto;
      margin-left: 5%;
      margin-top: 5%;
-     position: fixed;
      background: #f0b27a;
      color: #000;
      border-radius: 8px;
      text-transform: uppercase;
      display: block;
      text-align: center;
-     animation: score-animation2 1s infinite;
-     }*/
+     }
 
 
      #score-text{
