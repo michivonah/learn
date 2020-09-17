@@ -9,6 +9,7 @@
          <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" sizes="any">
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+         <link rel="stylesheet" type="text/css" href="file:///C:/Users/Michi/myCloud/Programmieren/HTML,CSS,JS/learn/style.css">
          <link rel="stylesheet" type="text/css" href="https://michivonah.github.io/learn/style.css">
          <script language="javascript" type="text/javascript" src="script.js"></script>
          <meta charset="UTF-8">
@@ -177,6 +178,14 @@
 
               <br><button id="control-btn">Kontrollieren</button>
             </div>
+
+            <div id="result-screen">
+              <h3 id="congrats-txt">Gratulation,</h3>
+              <i class="fas fa-smile-wink" style="color:#fdedec; font-size: 140px;"></i>
+              <p id="score-txt">du hast 0/10 Aufgaben richtig gel&ouml;st.</p>
+              <button id="close-score">Verstanden</button>
+            </div>
+
           </div>
 
 
@@ -200,64 +209,99 @@
 
       //Aufgaben
       $("#control-btn").click(function(){
+          var correct = 0;
+
+          // check answers
           if($("#aufg1-field1").val() == 'wer?'){
             $('#aufg1-field1').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
           if($("#aufg1-field2").val() == 'der'){
             $('#aufg1-field2').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
           if($("#aufg1-field3").val() == 'Akkusativ'){
             $('#aufg1-field3').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
           if($("#aufg1-field4").val() == 'Dativ'){
             $('#aufg1-field4').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
           if($("#aufg1-field5").val() == 'wem?'){
             $('#aufg1-field5').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
           if($("#aufg1-field6").val() == 'wessen?'){
             $('#aufg1-field6').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field1").val() == 'Nominativ'){
             $('#aufg2-field1').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field2").val() == 'Akkusativ'){
             $('#aufg2-field2').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field3").val() == 'Dativ'){
             $('#aufg2-field3').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field4").val() == 'Nominativ'){
             $('#aufg2-field4').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field5").val() == 'Genitiv'){
             $('#aufg2-field5').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field6").val() == 'Akkusativ'){
             $('#aufg2-field6').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field7").val() == 'Genitiv'){
             $('#aufg2-field7').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field8").val() == 'Akkusativ'){
             $('#aufg2-field8').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field9").val() == 'Nominativ'){
             $('#aufg2-field9').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
 
           if($("#aufg2-field10").val() == 'Akkusativ'){
             $('#aufg2-field10').css('background', '#7dcea0');
+            var correct = correct + 1;
           }
+
+          // Update and show result screen
+          $('#score-txt').text('du hast ' + correct + '/16 Fragen richtig gelöst.')
+          if(correct == 0){
+            $('#congrats-txt').text('Schade,')
+            $('#close-score').text('Ich möchte meine Fehler sehen!')
+            $('#score-txt').text('du hast ' + correct + '/16 Fragen richtig gelöst. Nächstes Mal klappt es bestimmt besser! ;-)')
+          }
+          $("#result-screen").toggle( 'fast', function(){});
+          $('#result-screen').css('display', 'block');
+          $("html, body").animate({ scrollTop: $(document).height() }, 500);
+      });
+
+      $("#close-score").click(function(){
+          $("#result-screen").toggle( 'fast', function(){
+          });
       });
       </script>
 </body>
