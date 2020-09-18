@@ -156,7 +156,7 @@ body{
 
      #result-screen{
      width: 90%;
-     height: 90vh;
+     height: calc(95vh - 60px);
      margin: auto;
      margin-left: 5%;
      margin-bottom: 15px;
@@ -166,7 +166,7 @@ body{
      text-transform: uppercase;
      display: none;
      text-align: center;
-     animation: smiley-animation 2s infinite;
+     /*animation: smiley-animation 2s infinite;*/
      }
 
      #result-screen h3{
@@ -189,6 +189,11 @@ body{
 
      a:hover{
      text-decoration: underline;
+     }
+
+     table{
+     width: 80%;
+     margin: 0px;
      }
 
      th, td{
@@ -237,6 +242,9 @@ body{
 @media screen and (max-width:660px){ /* Smartphone Version */
       .nav-pc-link { display: none; }
       .nav-sp-link { display: block; }
+      table { width: 90%; margin: auto; }
+      select { width: 90%; margin-left: 5px; }
+      button { width: 90%; margin-left: 5px; }
           }
 
 @media screen and (min-width:661px){ /* PC Version */
