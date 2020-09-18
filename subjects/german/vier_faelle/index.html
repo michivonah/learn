@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-         <title>Deutsch - Learn</title>
+         <title>4 F&auml;lle - Learn</title>
          <meta name="apple-mobile-web-app-title" content="titel">
          <link rel="icon" type="image/png" href="icons/favicon.png">
          <link rel="shortcut icon" type="image/svg+xml" href="icons/favicon.svg">
@@ -178,6 +178,51 @@
               <option>Genitiv</option>
               </select>
 
+              <p>Die Feier des neuen <strong>Hauses</strong> war toll.</strong></p>
+              <select required id="aufg2-field11">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
+              <p>Er zeigte es seinem <strong>Kunden.</strong></p>
+              <select required id="aufg2-field12">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
+              <p>Der Ball der <strong>Schwester</strong> ist gr&uuml;n.</p>
+              <select required id="aufg2-field13">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
+              <p>Er muss die Katze f&uuml;ttern!</p>
+              <select required id="aufg2-field14">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
+              <p>Ich kaufe heute einen neuen <strong>Fernseher.</strong></p>
+              <select required id="aufg2-field15">
+              <option disabled selected hidden>Fall</option>
+              <option>Nominativ</option>
+              <option>Akkusativ</option>
+              <option>Dativ</option>
+              <option>Genitiv</option>
+              </select>
+
               <br><button id="control-btn">Kontrollieren <i class="far fa-check-circle"></i></button>
             </div>
 
@@ -289,12 +334,37 @@
             var correct = correct + 1;
           }
 
+          if($("#aufg2-field11").val() == 'Genitiv'){
+            $('#aufg2-field11').css('background', '#7dcea0');
+            var correct = correct + 1;
+          }
+
+          if($("#aufg2-field12").val() == 'Dativ'){
+            $('#aufg2-field12').css('background', '#7dcea0');
+            var correct = correct + 1;
+          }
+
+          if($("#aufg2-field13").val() == 'Genitiv'){
+            $('#aufg2-field13').css('background', '#7dcea0');
+            var correct = correct + 1;
+          }
+
+          if($("#aufg2-field14").val() == 'Akkusativ'){
+            $('#aufg2-field14').css('background', '#7dcea0');
+            var correct = correct + 1;
+          }
+
+          if($("#aufg2-field15").val() == 'Akkusativ'){
+            $('#aufg2-field15').css('background', '#7dcea0');
+            var correct = correct + 1;
+          }
+
           // Update and show result screen
-          $('#score-txt').text('du hast ' + correct + '/16 Fragen richtig gelöst.')
+          $('#score-txt').text('du hast ' + correct + '/21 Fragen richtig gelöst.')
           if(correct === 0){
             $('#congrats-txt').text('Schade,')
             $('#close-score').text('Ich möchte meine Fehler sehen!')
-            $('#score-txt').text('du hast ' + correct + '/16 Fragen richtig gelöst. Nächstes Mal klappt es bestimmt besser! ;-)')
+            $('#score-txt').text('du hast ' + correct + '/21 Fragen richtig gelöst. Nächstes Mal klappt es bestimmt besser! ;-)')
           }
           $("#result-screen").toggle( 'fast', function(){});
           $('#result-screen').css('display', 'block');
