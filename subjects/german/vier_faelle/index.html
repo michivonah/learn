@@ -366,6 +366,11 @@
             $('#close-score').text('Ich möchte meine Fehler sehen!')
             $('#score-txt').text('du hast ' + correct + '/21 Fragen richtig gelöst. Nächstes Mal klappt es bestimmt besser! ;-)')
           }
+          else{
+            $('#congrats-txt').text('Gratulation,')
+            $('#close-score').text('Verstanden')
+            $('#score-txt').text('du hast ' + correct + '/21 Fragen richtig gelöst.')
+          }
           $("#result-screen").toggle( 'fast', function(){});
           $('#result-screen').css('display', 'block');
           $("html, body").animate({ scrollTop: $(document).height() }, 500);
