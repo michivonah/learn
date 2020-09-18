@@ -39,6 +39,7 @@
               <a href="#" class="nav-pc-link">Mathe</a>
               <a href="#" class="nav-pc-link">NT</a>
               <a href="#" class="nav-pc-link">RZG</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJlWEnVsZYQn6qFFu4syY1ojF9RUw6JR2VoggomokVMasBEw/viewform?usp=sf_link" class="nav-pc-link">Feedback</a>
               <a class="nav-sp-link"><i class="fas fa-bars"></i></a>
             </div>
           </div>
@@ -49,6 +50,7 @@
             <div class="navbar-sp-link"><a href="#">Mathe <i class="fas fa-calculator"></i></a></div>
             <div class="navbar-sp-link"><a href="#">NT <i class="fas fa-leaf"></i></a></div>
             <div class="navbar-sp-link"><a href="#">RZG <i class="fas fa-book"></i></a></div>
+            <div class="navbar-sp-link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfJlWEnVsZYQn6qFFu4syY1ojF9RUw6JR2VoggomokVMasBEw/viewform?usp=sf_link">Feedback geben <i class="far fa-file-alt"></i></a></div>
             <div class="navbar-sp-link"><a><i class="fas fa-times"></i></a></div>
           </div>
 
@@ -176,7 +178,7 @@
               <option>Genitiv</option>
               </select>
 
-              <br><button id="control-btn">Kontrollieren</button>
+              <br><button id="control-btn">Kontrollieren <i class="far fa-check-circle"></i></button>
             </div>
 
             <div id="result-screen">
@@ -289,7 +291,7 @@
 
           // Update and show result screen
           $('#score-txt').text('du hast ' + correct + '/16 Fragen richtig gelöst.')
-          if(correct == 0){
+          if(correct === 0){
             $('#congrats-txt').text('Schade,')
             $('#close-score').text('Ich möchte meine Fehler sehen!')
             $('#score-txt').text('du hast ' + correct + '/16 Fragen richtig gelöst. Nächstes Mal klappt es bestimmt besser! ;-)')
