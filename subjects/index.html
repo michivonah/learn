@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Error - Learn</title>
+  <meta name="apple-mobile-web-app-title" content="titel">
+  <link rel="icon" type="image/png" href="icons/favicon.png">
+  <link rel="shortcut icon" type="image/svg+xml" href="icons/favicon.svg">
+  <link rel="apple-touch-icon" href="icons/favicon.svg" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" sizes="any">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://michivonah.github.io/learn/style.css"/>
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+          <!-- Loadingscreen -->
+          <div id="loading-screen">
+              <div id="loading"><img src="https://michivonah.github.io/learn/logo-black.svg"></div>
+          </div>
+
+          <!-- Navigation -->
+          <header>
+          <div id="navbar-pc">
+            <div id="navbar-pc-titel"><a href="https://michivonah.github.io/learn"><img src="https://michivonah.github.io/learn/logo-white.svg"></a></div>
+            <div id="navbar-pc-links">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJlWEnVsZYQn6qFFu4syY1ojF9RUw6JR2VoggomokVMasBEw/viewform?usp=sf_link" class="nav-pc-link">Feedback</a>
+              <a class="nav-sp-link"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+          </header>
+
+          <div id="navigation-smartphone">
+            <div class="navbar-sp-link"><a href="https://michivonah.github.io/learn/subjects/german/">Deutsch <i class="fas fa-pencil-alt"></i></a></div>
+            <div class="navbar-sp-link" style="display: none;"><a href="#">Mathe <i class="fas fa-calculator"></i></a></div>
+            <div class="navbar-sp-link"><a href="https://michivonah.github.io/learn/subjects/nt">NT <i class="fas fa-leaf"></i></a></div>
+            <div class="navbar-sp-link" style="display: none;"><a href="#">RZG <i class="fas fa-book"></i></a></div>
+            <div class="navbar-sp-link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfJlWEnVsZYQn6qFFu4syY1ojF9RUw6JR2VoggomokVMasBEw/viewform?usp=sf_link">Feedback geben <i class="far fa-file-alt"></i></a></div>
+            <div class="navbar-sp-link"><a><i class="fas fa-times"></i></a></div>
+          </div>
+
+          <!-- Content -->
+          <div id="content"><br><br><br>
+            <div id="home" class="subject">
+              <h1>Fehler!</h1>
+              <p>Diese Seite existiert nicht oder kann nicht aufgerufen werden. Kehren sie zur Startseite zur&uuml;ck indem sie oben links auf das Logo klicken.</p>
+              <img src="https://cdn.pixabay.com/photo/2019/02/04/08/38/pixel-cells-3974187_960_720.png" style="width: 90%; height: auto; margin-left: 5%;">
+            </div>
+          </div>
+
+
+
+      <script>
+      // Loading
+      $(window).on("load", function(){
+        $("#loading-screen").fadeOut(750);
+      });
+
+      // Navigation
+      $(".nav-sp-link").click(function(){
+          $("#navigation-smartphone").toggle( 'slow', function(){
+          });
+      });
+
+      $(".navbar-sp-link").click(function(){
+          $("#navigation-smartphone").toggle( 'slow', function(){
+          });
+      });
+      </script>
+</body>
+</html>
