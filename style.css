@@ -181,6 +181,15 @@ body{
      text-transform: uppercase;
      }
 
+     .topic{
+     width: 40%;
+     height: auto;
+     background: #fef5e7;
+     border-radius: 8px;
+     border-color: #fff;
+     border: 2px solid;
+     }
+
      a{
      color: #000;
      text-decoration: none;
@@ -242,6 +251,7 @@ body{
 @media screen and (max-width:660px){ /* Smartphone Version */
       .nav-pc-link { display: none; }
       .nav-sp-link { display: block; }
+      .topic { width: 90%; margin-left: 5%; }
       table { width: 90%; margin: auto; }
       select { width: 90%; margin-left: 5px; }
       button { width: 90%; margin-left: 5px; }
